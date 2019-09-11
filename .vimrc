@@ -1,5 +1,5 @@
 " pathogen
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " syntax highlighting
 syntax on
@@ -30,6 +30,3 @@ au BufRead,BufNewFile *.tsx set filetype=javascript
 
 " scala
 " au BufRead,BufNewFile *.scala set filetype=java
-
-" remove all trailing whitespace on write
-autocmd BufWritePost * !sed -i 's/[[:space:]]*$//g' <afile> 
